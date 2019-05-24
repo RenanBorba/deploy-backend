@@ -28,4 +28,6 @@ app.use("/files",
 
 app.use(require("./routes"));
 
-app.listen(3000);
+/*Heroku preenche automaticamente porta
+OU porta ambiente dev */
+app.listen(process.env.PORT || 3000);
