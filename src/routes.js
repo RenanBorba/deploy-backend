@@ -16,7 +16,7 @@ routes.get("/posts", async (req, res) => {
 routes.post('/posts', multer(multerConfig).single('file'), async (req, res) => {
     console.log(req.file);
 
-    //destruturação
+    //desestruturação
     const { originalname: name, size, key, location: url  = "" } = req.file;
 
 
